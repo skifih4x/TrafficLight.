@@ -16,23 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="YZk-Qi-eAp">
-                                <rect key="frame" x="132" y="87" width="150" height="532"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fvd-zx-wuA">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYP-Jn-nya">
-                                        <rect key="frame" x="0.0" y="191" width="150" height="150"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHL-1g-R3Y">
-                                        <rect key="frame" x="0.0" y="382" width="150" height="150"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfo-rF-HZq">
                                 <rect key="frame" x="115" y="756" width="185" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,15 +30,30 @@
                                     <action selector="startButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Vv-EJ-i0i"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-KN-h6U">
+                                <rect key="frame" x="132" y="272" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rqc-iw-YFP">
+                                <rect key="frame" x="132" y="449" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gA1-Dv-PE6">
+                                <rect key="frame" x="132" y="96" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="greenColorView" destination="PHL-1g-R3Y" id="Jeb-Wg-wTB"/>
-                        <outlet property="redColorView" destination="Fvd-zx-wuA" id="mQ1-JY-arf"/>
+                        <outlet property="greenColorView" destination="Rqc-iw-YFP" id="Vfe-9F-NNt"/>
+                        <outlet property="redColorView" destination="gA1-Dv-PE6" id="sxw-5H-xmX"/>
                         <outlet property="startButton" destination="lfo-rF-HZq" id="Fzv-XP-7UN"/>
-                        <outlet property="yellowColorView" destination="HYP-Jn-nya" id="8eu-vO-Swd"/>
+                        <outlet property="yellowColorView" destination="1ke-KN-h6U" id="TyW-Zz-Kjm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
